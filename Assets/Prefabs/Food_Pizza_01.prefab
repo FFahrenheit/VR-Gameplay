@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 763173408497908170}
   - component: {fileID: 763173408501332458}
   - component: {fileID: 763173408500333354}
-  - component: {fileID: 5397366439878557116}
-  - component: {fileID: 4661572637328418960}
   - component: {fileID: 7913906161129742021}
   - component: {fileID: 1290314607272739958}
-  - component: {fileID: 7228356423458694368}
+  - component: {fileID: 1890476543180871556}
+  - component: {fileID: 88607492129440283}
+  - component: {fileID: 1050200606980943528}
   m_Layer: 0
   m_Name: Food_Pizza_01
   m_TagString: Untagged
@@ -60,7 +60,6 @@ MeshRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -85,32 +84,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &5397366439878557116
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 763173408498066922}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cb3723309f4561419e41d073a667fa5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 40
---- !u!114 &4661572637328418960
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 763173408498066922}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f561e62a0d4fbb8458145ed13d9ef3bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &7913906161129742021
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -140,7 +113,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &7228356423458694368
+--- !u!114 &1890476543180871556
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -149,6 +122,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 763173408498066922}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38b47aac77e807948838d255a43c1445, type: 3}
+  m_Script: {fileID: 11500000, guid: a6f5ec9cad4841a4ab05b5e0b77afda4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &88607492129440283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763173408498066922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10aff69934ce26d4381ec76727c5ea1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1050200606980943528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763173408498066922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d287289bd70d13f44a8a9d013606a7a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 55

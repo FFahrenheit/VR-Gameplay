@@ -4,8 +4,15 @@ using UnityEngine;
 
 public class ShotController : MonoBehaviour
 {
+    public GameObject projectilePrefab;
     public void ShotAtPosition()
     {
-        Debug.Log("Triggered");
+        var shotOrigin = GameObject.Find("Player").transform.position;
+        var shotDestination = transform.position;
+        Vector3 trajectory = shotDestination - shotOrigin;
+        var projectileRotation = Quaternion.LookRotation(trajectory);
+
+        Debug.Log("Dest: " + shotDestination + "\tOrig: " + shotOrigin + "\tRotation: " + projectileRotation + "\tTraj: " + trajectory);
+        Instantiate(projectilePrefab, shotOrigin, projectileRotation);
     }
 }
