@@ -14,6 +14,6 @@ public class ShotMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(this.transform.forward * Time.deltaTime * speed);
+        transform.Translate(transform.forward * Time.deltaTime * speed);
     }
 }
