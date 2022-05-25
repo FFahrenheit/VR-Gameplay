@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class DetectCollisions : MonoBehaviour
 {
     // Start is called before the first frame update
+    public AudioSource biteAudio;
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -18,7 +19,10 @@ public class DetectCollisions : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Destroy(gameObject);
+        TextMeshProUGUI scoreText = GameObject.Find("ScoreText").GetComponent<TextMeshProUGUI>();
+        scoreText.SetText("Score: " + ++CounterController.count);
+        biteAudio.Play();
+        Destroy(gameObject, 500);
         Destroy(other.gameObject);
     }
 }

@@ -258,11 +258,10 @@ GameObject:
   - component: {fileID: 7835993541870355753}
   - component: {fileID: 7835993541878211687}
   - component: {fileID: 1394431202207792784}
-  - component: {fileID: -1439529592271363782}
   - component: {fileID: 754854613862476684}
-  - component: {fileID: -367309655758373498}
   - component: {fileID: 270533658045984300}
   - component: {fileID: 6582233112528368652}
+  - component: {fileID: 5658637940611400045}
   m_Layer: 0
   m_Name: Animal_Chick
   m_TagString: Untagged
@@ -318,18 +317,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 6.7267203, y: 7.4139366, z: 12.590896}
   m_Center: {x: -0.34360355, y: 3.206968, z: -0.20616318}
---- !u!114 &-1439529592271363782
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7835993541870837201}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6f5ec9cad4841a4ab05b5e0b77afda4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &754854613862476684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -343,18 +330,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
---- !u!114 &-367309655758373498
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7835993541870837201}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10aff69934ce26d4381ec76727c5ea1c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &270533658045984300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -427,6 +402,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &5658637940611400045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7835993541870837201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6f5ec9cad4841a4ab05b5e0b77afda4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7835993541870844509
 GameObject:
   m_ObjectHideFlags: 0
@@ -543,6 +530,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10aff69934ce26d4381ec76727c5ea1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  biteAudio: {fileID: 0}
 --- !u!114 &9101625370552004007
 MonoBehaviour:
   m_ObjectHideFlags: 0

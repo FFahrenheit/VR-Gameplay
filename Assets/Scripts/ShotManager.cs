@@ -5,7 +5,7 @@ using UnityEngine;
 public class ShotManager : MonoBehaviour
 {
     public GameObject shotPrefab;
-    private float startDelay = 2.0f;
+    private float startDelay = 5.0f;
     private float spawnInterval = 0.5f;
     // Start is called before the first frame update
     void Start()
